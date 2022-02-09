@@ -1,0 +1,123 @@
+/* Who I Am component Style */
+
+.who
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 50px;
+    scroll-snap-align: start;
+}
+
+    .who h1
+    {
+        font-size: 40px;
+        padding: 0 0 10px 0;
+        border-bottom: 2px solid var(--c-orange);
+    }
+
+        .who .whoiam
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .who .whoiam .disappears
+            {
+                width: 450px;
+                border-radius: 5px;
+                height: 500px;
+                overflow: hidden;
+                margin: 0 20px;
+                opacity: 0;
+                transition: all .5s ease;
+            }
+
+                .who .whoiam .disappears:nth-child(1), .appears:nth-child(1)
+                {
+                    transform: translateX(-50px);
+                    transition: all .5s ease;
+                }
+
+
+                .who .whoiam .disappears:nth-child(1) img, .appears:nth-child(1) img
+                {
+                    width: 100%;
+                    height: inherit;
+                    box-shadow: 0 2px 8px 0 var(--c-black-trans);
+                }
+
+                .who .whoiam .disappears:nth-child(2), .appears:nth-child(2)
+                {
+                    display: flex; 
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    flex-flow: 1;
+                    text-align: left;
+                    transform: translateX(50px);
+                }
+
+                    .who .whoiam .disappears:nth-child(2) h2, .appears:nth-child(2) h2
+                    {
+                        font-size: 35px;
+                    }
+
+                    .who .whoiam .disappears:nth-child(2) p, .appears:nth-child(2) p
+                    {
+                        font-size: 20px;
+                    }
+
+/* Clase especial */
+
+.who .whoiam .appears
+{
+    width: 450px;
+    border-radius: 5px;
+    height: 500px;
+    margin: 0 20px;
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.who .whoiam .appears:nth-child(1)
+{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all .5s ease;
+}
+
+    .who .whoiam .appears:nth-child(1) img
+    {
+        transition: all .5s ease;
+    }
+
+    .who .whoiam .appears:nth-child(1):hover img
+    {
+        transform: perspective(1300px) scale(0.9);
+    }
+
+.who .whoiam .appears:nth-child(2)
+{  
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+/* media quireies */
+
+@media (max-width: 986px)
+{
+    .who .whoiam
+    {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

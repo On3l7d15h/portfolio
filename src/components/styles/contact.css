@@ -1,0 +1,223 @@
+/* Contact Component Style */
+
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--c-gradient-contact);
+    margin: 50px auto 0;
+    background-size: cover;
+    height: 80vh;
+    scroll-snap-align: start;
+}
+
+    .contact h1
+    {
+        padding: 0  0 5px 0;
+        border-bottom: 2px solid var(--c-white);
+        color: var(--c-white);
+    }
+
+        .contact section 
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            height: 550px;
+        }
+
+            .contact section .text-img
+            {
+                background: url("/public/images/contact.jpg");
+                width: 35%;
+                height: 100%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .contact section .text-img::before
+                {
+                    content: "";
+                    position: absolute;
+                    backdrop-filter: blur(13px);
+                    top: 0;
+                    left: 0;
+                    background: var(--c-black-trans);
+                    width: 100%;
+                    height: 100%;
+                    z-index: 3;
+                    transition: backdrop-filter .5s ease;
+                }
+
+            .contact section .text-img p
+            {
+                text-align: center;
+                font-size: 20px;
+                color: var(--c-orange);
+                background: var(--c-white);
+                padding: 10px;
+                border-radius: 5px;
+                position: relative;
+                top: 40px;
+                opacity: 0;
+                z-index: 2;
+                transition: all .5s ease .5s;
+            }
+
+                .contact section .text-img:hover p
+                {
+                    top: 100px;
+                    opacity: 1;
+                }
+
+                .contact section .text-img:hover::before
+                {
+                    backdrop-filter: blur(0);
+                    z-index: 2;
+                }
+
+            .contact section .form
+            {
+                width: 35%;
+                background: var(--c-white);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contact section .form form
+            {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 90%;
+                height: 100%;
+                text-align: center;
+            }
+
+                    .contact section .form form label
+                    {
+                        font-size: 20px;
+                        margin: 10px auto;
+                        padding: 5px;
+                        width: 90%;
+                    }
+
+                        .contact section .form form label input
+                        {
+                            width: 90%;
+                            border: 2px solid var(--c-gray);
+                            padding: 10px;
+                            border-radius: 5px;
+                            font-size: 18px;
+                            outline: none;
+                            transition: all .5s ease;
+                        }
+
+                        .contact section .form form label textarea
+                        {
+                            border: 2px solid var(--c-gray);
+                            padding: 10px;
+                            outline: 0;
+                            border-radius: 5px;
+                            font-size: 18px;
+                            outline: none;
+                            resize: none;
+                            width: 90%;
+                            height: 200px;
+                            transition: all .5s ease;
+                        }
+
+                            .contact section .form form label input:focus, .contact section .form form label textarea:focus
+                            {
+                                border-color: var(--c-orange);
+                                color: var(--c-orange);
+                            }
+
+                    .contact section .form form button
+                    {
+                        padding: 5px;
+                        display: block;
+                        font-weight: bold;
+                        font-size: 18px;
+                        color: var(--c-white);
+                        background: var(--c-gray);
+                        cursor: pointer;
+                        border: 0;
+                        margin: auto;
+                        width: 30%;
+                        position: relative;
+                        z-index: 1;
+                        transition: width .6s ease;
+                    }
+
+                        .contact section .form form button::before
+                        {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 0;
+                            height: 100%;
+                            z-index: -1;
+                            background: var(--c-white-orange);
+                            transition: width .6s ease;
+                        }
+
+                        .contact section .form form button:hover::before
+                        {
+                            width: 100%;
+                        }
+
+/* media queries */
+
+@media (max-width: 978px)
+{
+    
+    .contact
+    {
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact section
+    {
+        width: 100%;
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .contact section .text-img
+        {
+            width: 80%;
+            height: 100%;
+        }
+
+        .contact section .form
+        {
+            width: 80%;
+            flex-wrap: wrap;
+        }
+}

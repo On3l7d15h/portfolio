@@ -1,0 +1,66 @@
+/* Start of the portfolio */
+
+.start 
+{
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    background: var(--c-gradient-main);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+    .start section h1
+    {
+        font-size: 60px;
+        color: var(--c-white);
+        transition: .5s all ease;
+        position: relative;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+        .start section h1::before
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-top: 2px solid var(--c-white);
+            border-bottom: 2px solid var(--c-white);
+            opacity: 0;
+            transform: scaleY(2);
+            transition: transform, opacity .6s, .6s;
+        }
+
+    .start section h1:hover
+    {
+        transition-delay: .5s; 
+        background: var(--c-white);
+        color: var(--c-yellow);
+    }
+
+        .start section h1:hover::before
+        {
+            transform: scaleY(0.9);
+            opacity: 1;
+        }
+
+/* Media Queries */
+
+@media (max-width: 782px)
+{
+    .start section 
+    {
+        width: 90%;
+    }
+}

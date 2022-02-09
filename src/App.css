@@ -1,0 +1,39 @@
+:root 
+{
+  --c-white: rgb(255, 255, 255);
+    --c-white-trans: rgba(255, 255, 255, .3);
+  --c-orange: rgb(226, 128, 0);
+    --c-orange-trans: rgba(226, 128, 0, .34);
+    --c-orange-trans-2: rgba(226, 128, 0, .44);
+    --c-white-orange: rgb(255, 152, 0);
+  --c-yellow: rgb(255, 195, 64);
+    --c-yellow-trans: rgba(255, 195, 64, .3);
+  --c-gray: rgb(140, 140, 140);
+    --c-black-gray: rgb(102, 102, 102);
+  --c-black: rgba(0, 0, 0);
+    --c-black-trans: rgba(0, 0, 0, 0.3);
+    --c-black-trans-2: rgba(0, 0, 0, .4);
+
+    /* gradients */
+    --c-gradient-main: linear-gradient(to left, var(--c-orange-trans-2), var(--c-black-trans-2)), url("../public/images/descarga.jpg");
+    --c-gradient-contact: linear-gradient(to left, var(--c-black-trans-2), var(--c-yellow-trans)), url("../public/images/contact.jpg");
+}
+
+*
+{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.App
+{
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}

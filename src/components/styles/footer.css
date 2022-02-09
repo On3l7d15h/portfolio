@@ -1,0 +1,40 @@
+/* Simple footer Component style */
+
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--c-black-gray);
+    padding: 10px;
+    max-width: 100%;
+    width: 100%;
+}
+
+    .footer span
+    {
+        color: var(--c-white);
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .footer section 
+    {
+        padding: 5px;
+        font-size: 40px;
+    }
+
+        .footer section a, a i
+        {
+            color: var(--c-white);
+            margin: auto 10px;
+            text-decoration: none;
+            transition: all .5s ease;
+        }
+
+            .footer section a:hover i
+            {
+                color: var(--c-white-orange);
+            }
