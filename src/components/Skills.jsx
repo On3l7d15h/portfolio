@@ -12,16 +12,13 @@ const Skill = () => {
         {name: "SvelteJS", image: "./images/skills/sveltejs.png"},
         {name: "NodeJS", image: "./images/skills/nodejs.png"},
         {name: "Bootstrap", image: "./images/skills/bootstrap.png"},
-        {name: "MongoDB", image: "./images/skills/mongodb.jpg"},
+        {name: "MongoDB", image: "./images/skills/mongodb.png"},
     ];
 
     return(
         <div className="skill" id="idSkill">
             <h1>Habilidades</h1>
             <section>
-                <p>
-                    Aquí les muestro las habilidades que he desarrollado, y muy pronto, verán las que vaya aprendiendo
-                </p>
                 <div className="container">
                     {
                         skill.map((skill, index) => {

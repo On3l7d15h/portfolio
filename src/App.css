@@ -37,3 +37,27 @@
   margin: 0;
   overflow: hidden;
 }
+
+.App p
+{
+    line-height: 1.5;
+}
+
+/* Para el scrollbar del portfolio*/
+
+html::-webkit-scrollbar
+{
+    width: 20px;
+}
+
+    html::-webkit-scrollbar-thumb
+    {
+        border: 3px solid var(--c-white);
+        border-radius: 20px;
+        background: var(--c-white-orange);
+    }
+
+    html::-webkit-scrollbar-thumb:hover
+    {
+        background: var(--c-orange);
+    }

@@ -6,7 +6,7 @@ const Start = () => {
         <div className="start" id="idStart">
             <section>
                 <h1> 
-                    Bienvenido a Mi Portafolio 
+                    ¡On3l7 d15h D3v!
                 </h1>
             </section>
         </div>

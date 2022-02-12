@@ -31,12 +31,13 @@
             align-items: center;
             width: 70%;
             height: 550px;
+            margin: 0 0 30px;
         }
 
             .contact section .text-img
             {
                 background: url("/public/images/contact.jpg");
-                width: 35%;
+                width: 40%;
                 height: 100%;
                 position: relative;
                 display: flex;
@@ -69,6 +70,7 @@
                 padding: 10px;
                 border-radius: 5px;
                 position: relative;
+                width: 90%;
                 top: 40px;
                 opacity: 0;
                 z-index: 2;
@@ -89,7 +91,7 @@
 
             .contact section .form
             {
-                width: 35%;
+                width: 40%;
                 background: var(--c-white);
                 height: 100%;
                 display: flex;
@@ -190,7 +192,8 @@
     
     .contact
     {
-        height: 130vh;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;

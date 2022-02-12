@@ -11,7 +11,7 @@ const Navbar = ({ data }) => {
         window.addEventListener("scroll", () => {
             setscrollTop(document.documentElement.scrollTop)
 
-            if(scrollTop >= 950){
+            if(scrollTop >= 850){
                 setChange((t) => true);
             } else {
                 setChange((t) => false);

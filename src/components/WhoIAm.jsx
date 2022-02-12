@@ -10,7 +10,7 @@ const WhoIAm = () => {
         window.addEventListener("scroll", () => {
             setobjectTop(document.documentElement.scrollTop);
 
-            if(objectTop >= 930){
+            if(objectTop >= 830){
                 setAnimation((t) => true);
             }
 
@@ -29,11 +29,7 @@ const WhoIAm = () => {
                         <h2>¡Hola!</h2>
                         <p>
                             Mi nombre es Onell Dishmey,
-                            programador web, que trabaja del lado
-                            del cliente, ¡Gusto en Conocerte!
-                        </p>
-                        <p>
-                            Nueva vez, te invito a mi sitio web, por aquí, encontraras, mis habilidades, algunos de mis projectos, y me podras contactar para hacer tu proyecto
+                            un programador web que le gusta desarrollar páginas webs dinámicas, Actualmente estoy estudiando en el ITLA, cursando el tecnólogo en Desarrollo de Software y mi hobbie es... ¡aprender cosas nuevas! 
                         </p>
                     </section>
             </div>

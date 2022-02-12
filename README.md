@@ -4,7 +4,7 @@ Dios bendiga, en este momento les dejo aquí, mi portafolio hecho con React, res
 
 
 
-![](/home/on3l7/Imágenes/preview.png)
+![](./public/images/preview.png)
 
 
 

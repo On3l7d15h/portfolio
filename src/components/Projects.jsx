@@ -12,7 +12,7 @@ const Projects = () => {
         window.addEventListener("scroll", () => {
             setobjectTop(document.documentElement.scrollTop);
 
-            if(objectTop >= 1930){
+            if(objectTop >= 1830){
                 setAnimation((t) => true);
             }
 
@@ -30,7 +30,7 @@ const Projects = () => {
     return(
         <div className="projects" id="idProjects">
             <h1> Projectos! </h1>
-            <section >
+            <section>
                 <p className={(animation) ? "appears" : ""}> 
                     Por aquí te dejo algunos Projectos ya hechos que podrían gustarte! Si deseas saber y ver estos projectos, para verlos, solo debes darle click a la imágen, e irás al respectivo proyecto.
                 </p>
